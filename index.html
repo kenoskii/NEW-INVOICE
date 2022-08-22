@@ -29,10 +29,16 @@ body {
   height: 100%;
   background: #ffffff
 }
+@media (max-height:91.1rem){
+    .body{
+        max-height: 100%;
+    }
+}
 
 
 .headline {
-  width: 62.5%rem;  height: 4rem;
+  width: 100%;  
+  height: 4rem;
   text-align: center;
   color: #ffffff;
   background-color: #1f68d6;
@@ -41,11 +47,22 @@ body {
   padding-top: 2rem;
   justify-items: center;
 }
+@media (max-width:76.8rem) {
+    .heading {
+        /* box-sizing: border-box; */
+        font-size: 1.2rem;
+    }
+}
 
 section {
   margin: 0 15rem 0 15rem;
 }
-
+@media (max-width:76.8rem){
+    section{
+       margin: 1rem;
+       font-size: 1.2rem;
+    }
+}
 .top {
   align-self: flex-start;
   display: flex;
@@ -54,6 +71,7 @@ section {
   margin-top: 3.8rem;
   margin-bottom: 8.3rem;
 }
+
 
 hr {
   box-sizing: border-box;
@@ -66,6 +84,11 @@ hr {
   margin-top: 2rem;
   line-height: 2.7rem;
   margin-bottom: 6.6rem;
+}
+@media (max-width:76.8rem){
+    .section-bottom img{
+        margin-right: 0.4rem;
+    }
 }
 
 .table {
@@ -119,10 +142,21 @@ hr {
   font-size: 2.3rem;
   margin-left: 2rem;
 }
+@media (max-width:76.8rem){
+    .total .figure{
+        font-size: 1.3rem;
+    }
+}
 
 .total .words {
   color: #000000;
   font-size: 1.8rem;
+}
+@media (max-width:76.8rem){
+    
+    .total .words {
+        font-size: 1.3rem;
+    }
 }
 
 .remit {
@@ -130,6 +164,11 @@ hr {
   color: #4a4a68;
   font-size: 2.1rem;
   line-height: 3.8rem;
+}
+@media (max-width:76.8rem){
+    .remit {
+        font-size: 1.3rem;
+    }
 }
 
 .remit strong {
